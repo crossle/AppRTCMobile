@@ -7,11 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2753FAD61EFC073A00465820 /* WebRTC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2753FAD51EFC073700465820 /* WebRTC.framework */; };
+		2753FAD71EFC073A00465820 /* WebRTC.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2753FAD51EFC073700465820 /* WebRTC.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2753FAD81EFC07C300465820 /* ARDTURNClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 2753FACF1EFC044000465820 /* ARDTURNClient.m */; };
+		2753FAD91EFC07D600465820 /* ARDCaptureController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2753FAD11EFC044000465820 /* ARDCaptureController.m */; };
+		2753FADB1EFCBCC000465820 /* ARDSettingsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2753FACD1EFC044000465820 /* ARDSettingsModel.m */; };
+		2753FADC1EFCBCC700465820 /* ARDSettingsStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 2753FACB1EFC044000465820 /* ARDSettingsStore.m */; };
 		277D2C1D1E14BCB2001802E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 277D2C1C1E14BCB2001802E2 /* Assets.xcassets */; };
 		277D2C6D1E14BCF3001802E2 /* ARDAppClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 277D2C281E14BCF3001802E2 /* ARDAppClient.m */; };
 		277D2C6E1E14BCF3001802E2 /* ARDAppEngineClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 277D2C2B1E14BCF3001802E2 /* ARDAppEngineClient.m */; };
 		277D2C6F1E14BCF3001802E2 /* ARDBitrateTracker.m in Sources */ = {isa = PBXBuildFile; fileRef = 277D2C2D1E14BCF3001802E2 /* ARDBitrateTracker.m */; };
-		277D2C701E14BCF3001802E2 /* ARDCEODTURNClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 277D2C2F1E14BCF3001802E2 /* ARDCEODTURNClient.m */; };
 		277D2C711E14BCF3001802E2 /* ARDJoinResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 277D2C311E14BCF3001802E2 /* ARDJoinResponse.m */; };
 		277D2C721E14BCF3001802E2 /* ARDMessageResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 277D2C341E14BCF3001802E2 /* ARDMessageResponse.m */; };
 		277D2C731E14BCF3001802E2 /* ARDSDPUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 277D2C381E14BCF3001802E2 /* ARDSDPUtils.m */; };
@@ -22,8 +27,6 @@
 		277D2C781E14BCF3001802E2 /* ARDAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 277D2C471E14BCF3001802E2 /* ARDAppDelegate.m */; };
 		277D2C791E14BCF3001802E2 /* ARDMainView.m in Sources */ = {isa = PBXBuildFile; fileRef = 277D2C491E14BCF3001802E2 /* ARDMainView.m */; };
 		277D2C7A1E14BCF3001802E2 /* ARDMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 277D2C4B1E14BCF3001802E2 /* ARDMainViewController.m */; };
-		277D2C7B1E14BCF3001802E2 /* ARDSettingsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 277D2C4E1E14BCF3001802E2 /* ARDSettingsModel.m */; };
-		277D2C7C1E14BCF3001802E2 /* ARDSettingsStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 277D2C501E14BCF3001802E2 /* ARDSettingsStore.m */; };
 		277D2C7D1E14BCF3001802E2 /* ARDSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 277D2C521E14BCF3001802E2 /* ARDSettingsViewController.m */; };
 		277D2C7E1E14BCF3001802E2 /* ARDStatsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 277D2C541E14BCF3001802E2 /* ARDStatsView.m */; };
 		277D2C7F1E14BCF3001802E2 /* ARDVideoCallView.m in Sources */ = {isa = PBXBuildFile; fileRef = 277D2C561E14BCF3001802E2 /* ARDVideoCallView.m */; };
@@ -51,13 +54,11 @@
 		277D2C9E1E14BD07001802E2 /* RTCSessionDescription+JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 277D2C9A1E14BD07001802E2 /* RTCSessionDescription+JSON.m */; };
 		277D2CA41E14BD16001802E2 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 277D2CA11E14BD16001802E2 /* LICENSE */; };
 		277D2CA51E14BD16001802E2 /* SRWebSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 277D2CA31E14BD16001802E2 /* SRWebSocket.m */; };
-		277D2CA71E14BF04001802E2 /* WebRTC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 277D2CA61E14BF04001802E2 /* WebRTC.framework */; };
 		277D2CAB1E17ECB6001802E2 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 277D2CAA1E17ECB6001802E2 /* CFNetwork.framework */; };
 		277D2CAD1E17ECC0001802E2 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 277D2CAC1E17ECC0001802E2 /* Security.framework */; };
 		277D2CAF1E17ECDA001802E2 /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 277D2CAE1E17ECDA001802E2 /* libicucore.tbd */; };
 		27B0F81B1E17EEC800C88FB0 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 27B0F81A1E17EEC800C88FB0 /* Icon.png */; };
 		27B0F81D1E17EF9C00C88FB0 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 27B0F81C1E17EF9C00C88FB0 /* Default-568h@2x.png */; };
-		27B0F81F1E17F25D00C88FB0 /* WebRTC.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 277D2CA61E14BF04001802E2 /* WebRTC.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -67,7 +68,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				27B0F81F1E17F25D00C88FB0 /* WebRTC.framework in Embed Frameworks */,
+				2753FAD71EFC073A00465820 /* WebRTC.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -75,6 +76,16 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2753FACA1EFC044000465820 /* ARDCaptureController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARDCaptureController.h; sourceTree = "<group>"; };
+		2753FACB1EFC044000465820 /* ARDSettingsStore.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ARDSettingsStore.m; sourceTree = "<group>"; };
+		2753FACC1EFC044000465820 /* ARDSettingsModel+Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ARDSettingsModel+Private.h"; sourceTree = "<group>"; };
+		2753FACD1EFC044000465820 /* ARDSettingsModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ARDSettingsModel.m; sourceTree = "<group>"; };
+		2753FACE1EFC044000465820 /* ARDSettingsStore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARDSettingsStore.h; sourceTree = "<group>"; };
+		2753FACF1EFC044000465820 /* ARDTURNClient.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ARDTURNClient.m; sourceTree = "<group>"; };
+		2753FAD01EFC044000465820 /* ARDTURNClient+Internal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ARDTURNClient+Internal.h"; sourceTree = "<group>"; };
+		2753FAD11EFC044000465820 /* ARDCaptureController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ARDCaptureController.m; sourceTree = "<group>"; };
+		2753FAD21EFC044000465820 /* ARDSettingsModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARDSettingsModel.h; sourceTree = "<group>"; };
+		2753FAD51EFC073700465820 /* WebRTC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = WebRTC.framework; sourceTree = "<group>"; };
 		277D2C0D1E14BCB2001802E2 /* AppRTCMobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppRTCMobile.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		277D2C1C1E14BCB2001802E2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		277D2C271E14BCF3001802E2 /* ARDAppClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARDAppClient.h; sourceTree = "<group>"; };
@@ -84,8 +95,6 @@
 		277D2C2B1E14BCF3001802E2 /* ARDAppEngineClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARDAppEngineClient.m; sourceTree = "<group>"; };
 		277D2C2C1E14BCF3001802E2 /* ARDBitrateTracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARDBitrateTracker.h; sourceTree = "<group>"; };
 		277D2C2D1E14BCF3001802E2 /* ARDBitrateTracker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARDBitrateTracker.m; sourceTree = "<group>"; };
-		277D2C2E1E14BCF3001802E2 /* ARDCEODTURNClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARDCEODTURNClient.h; sourceTree = "<group>"; };
-		277D2C2F1E14BCF3001802E2 /* ARDCEODTURNClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARDCEODTURNClient.m; sourceTree = "<group>"; };
 		277D2C301E14BCF3001802E2 /* ARDJoinResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARDJoinResponse.h; sourceTree = "<group>"; };
 		277D2C311E14BCF3001802E2 /* ARDJoinResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARDJoinResponse.m; sourceTree = "<group>"; };
 		277D2C321E14BCF3001802E2 /* ARDJoinResponse+Internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ARDJoinResponse+Internal.h"; sourceTree = "<group>"; };
@@ -112,11 +121,6 @@
 		277D2C491E14BCF3001802E2 /* ARDMainView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARDMainView.m; sourceTree = "<group>"; };
 		277D2C4A1E14BCF3001802E2 /* ARDMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARDMainViewController.h; sourceTree = "<group>"; };
 		277D2C4B1E14BCF3001802E2 /* ARDMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARDMainViewController.m; sourceTree = "<group>"; };
-		277D2C4C1E14BCF3001802E2 /* ARDSettingsModel+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ARDSettingsModel+Private.h"; sourceTree = "<group>"; };
-		277D2C4D1E14BCF3001802E2 /* ARDSettingsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARDSettingsModel.h; sourceTree = "<group>"; };
-		277D2C4E1E14BCF3001802E2 /* ARDSettingsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARDSettingsModel.m; sourceTree = "<group>"; };
-		277D2C4F1E14BCF3001802E2 /* ARDSettingsStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARDSettingsStore.h; sourceTree = "<group>"; };
-		277D2C501E14BCF3001802E2 /* ARDSettingsStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARDSettingsStore.m; sourceTree = "<group>"; };
 		277D2C511E14BCF3001802E2 /* ARDSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARDSettingsViewController.h; sourceTree = "<group>"; };
 		277D2C521E14BCF3001802E2 /* ARDSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARDSettingsViewController.m; sourceTree = "<group>"; };
 		277D2C531E14BCF3001802E2 /* ARDStatsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARDStatsView.h; sourceTree = "<group>"; };
@@ -155,7 +159,6 @@
 		277D2CA11E14BD16001802E2 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		277D2CA21E14BD16001802E2 /* SRWebSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRWebSocket.h; sourceTree = "<group>"; };
 		277D2CA31E14BD16001802E2 /* SRWebSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRWebSocket.m; sourceTree = "<group>"; };
-		277D2CA61E14BF04001802E2 /* WebRTC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = WebRTC.framework; sourceTree = "<group>"; };
 		277D2CAA1E17ECB6001802E2 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		277D2CAC1E17ECC0001802E2 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		277D2CAE1E17ECDA001802E2 /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = usr/lib/libicucore.tbd; sourceTree = SDKROOT; };
@@ -171,7 +174,7 @@
 				277D2CAF1E17ECDA001802E2 /* libicucore.tbd in Frameworks */,
 				277D2CAD1E17ECC0001802E2 /* Security.framework in Frameworks */,
 				277D2CAB1E17ECB6001802E2 /* CFNetwork.framework in Frameworks */,
-				277D2CA71E14BF04001802E2 /* WebRTC.framework in Frameworks */,
+				2753FAD61EFC073A00465820 /* WebRTC.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -199,10 +202,19 @@
 		277D2C0F1E14BCB2001802E2 /* AppRTCMobile */ = {
 			isa = PBXGroup;
 			children = (
-				277D2CA61E14BF04001802E2 /* WebRTC.framework */,
+				2753FAD51EFC073700465820 /* WebRTC.framework */,
 				277D2C9F1E14BD16001802E2 /* third_party */,
 				277D2C931E14BD07001802E2 /* RTCIceCandidate+JSON.h */,
 				277D2C941E14BD07001802E2 /* RTCIceCandidate+JSON.m */,
+				2753FACA1EFC044000465820 /* ARDCaptureController.h */,
+				2753FAD11EFC044000465820 /* ARDCaptureController.m */,
+				2753FAD21EFC044000465820 /* ARDSettingsModel.h */,
+				2753FACD1EFC044000465820 /* ARDSettingsModel.m */,
+				2753FACC1EFC044000465820 /* ARDSettingsModel+Private.h */,
+				2753FACE1EFC044000465820 /* ARDSettingsStore.h */,
+				2753FACB1EFC044000465820 /* ARDSettingsStore.m */,
+				2753FACF1EFC044000465820 /* ARDTURNClient.m */,
+				2753FAD01EFC044000465820 /* ARDTURNClient+Internal.h */,
 				277D2C951E14BD07001802E2 /* RTCIceServer+JSON.h */,
 				277D2C961E14BD07001802E2 /* RTCIceServer+JSON.m */,
 				277D2C971E14BD07001802E2 /* RTCMediaConstraints+JSON.h */,
@@ -216,8 +228,6 @@
 				277D2C2B1E14BCF3001802E2 /* ARDAppEngineClient.m */,
 				277D2C2C1E14BCF3001802E2 /* ARDBitrateTracker.h */,
 				277D2C2D1E14BCF3001802E2 /* ARDBitrateTracker.m */,
-				277D2C2E1E14BCF3001802E2 /* ARDCEODTURNClient.h */,
-				277D2C2F1E14BCF3001802E2 /* ARDCEODTURNClient.m */,
 				277D2C301E14BCF3001802E2 /* ARDJoinResponse.h */,
 				277D2C311E14BCF3001802E2 /* ARDJoinResponse.m */,
 				277D2C321E14BCF3001802E2 /* ARDJoinResponse+Internal.h */,
@@ -270,11 +280,6 @@
 				277D2C491E14BCF3001802E2 /* ARDMainView.m */,
 				277D2C4A1E14BCF3001802E2 /* ARDMainViewController.h */,
 				277D2C4B1E14BCF3001802E2 /* ARDMainViewController.m */,
-				277D2C4C1E14BCF3001802E2 /* ARDSettingsModel+Private.h */,
-				277D2C4D1E14BCF3001802E2 /* ARDSettingsModel.h */,
-				277D2C4E1E14BCF3001802E2 /* ARDSettingsModel.m */,
-				277D2C4F1E14BCF3001802E2 /* ARDSettingsStore.h */,
-				277D2C501E14BCF3001802E2 /* ARDSettingsStore.m */,
 				277D2C511E14BCF3001802E2 /* ARDSettingsViewController.h */,
 				277D2C521E14BCF3001802E2 /* ARDSettingsViewController.m */,
 				277D2C531E14BCF3001802E2 /* ARDStatsView.h */,
@@ -370,12 +375,11 @@
 		277D2C051E14BCB2001802E2 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0820;
+				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = MineWave;
 				TargetAttributes = {
 					277D2C0C1E14BCB2001802E2 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = 8K4E58U732;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -432,11 +436,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				277D2C7C1E14BCF3001802E2 /* ARDSettingsStore.m in Sources */,
+				2753FADC1EFCBCC700465820 /* ARDSettingsStore.m in Sources */,
+				2753FADB1EFCBCC000465820 /* ARDSettingsModel.m in Sources */,
+				2753FAD91EFC07D600465820 /* ARDCaptureController.m in Sources */,
+				2753FAD81EFC07C300465820 /* ARDTURNClient.m in Sources */,
 				277D2C781E14BCF3001802E2 /* ARDAppDelegate.m in Sources */,
 				277D2C6E1E14BCF3001802E2 /* ARDAppEngineClient.m in Sources */,
 				277D2C7E1E14BCF3001802E2 /* ARDStatsView.m in Sources */,
-				277D2C7B1E14BCF3001802E2 /* ARDSettingsModel.m in Sources */,
 				277D2C9B1E14BD07001802E2 /* RTCIceCandidate+JSON.m in Sources */,
 				277D2C741E14BCF3001802E2 /* ARDSignalingMessage.m in Sources */,
 				277D2C7D1E14BCF3001802E2 /* ARDSettingsViewController.m in Sources */,
@@ -454,7 +460,6 @@
 				277D2C9E1E14BD07001802E2 /* RTCSessionDescription+JSON.m in Sources */,
 				277D2C7A1E14BCF3001802E2 /* ARDMainViewController.m in Sources */,
 				277D2C721E14BCF3001802E2 /* ARDMessageResponse.m in Sources */,
-				277D2C701E14BCF3001802E2 /* ARDCEODTURNClient.m in Sources */,
 				277D2C801E14BCF3001802E2 /* ARDVideoCallViewController.m in Sources */,
 				277D2C7F1E14BCF3001802E2 /* ARDVideoCallView.m in Sources */,
 				277D2C821E14BCF3001802E2 /* main.m in Sources */,
@@ -474,7 +479,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -482,7 +489,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -522,7 +533,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -530,7 +543,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -559,13 +576,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 8K4E58U732;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/webrtc",
 				);
-				HEADER_SEARCH_PATHS = ./webrtc/internal;
+				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = "$(SRCROOT)/webrtc/ios/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -578,13 +595,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 8K4E58U732;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/webrtc",
 				);
-				HEADER_SEARCH_PATHS = ./webrtc/internal;
+				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = "$(SRCROOT)/webrtc/ios/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

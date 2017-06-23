@@ -12,6 +12,11 @@
 
 #import <WebRTC/RTCMacros.h>
 
+typedef NS_ENUM(NSUInteger, RTCTlsCertPolicy) {
+  RTCTlsCertPolicySecure,
+  RTCTlsCertPolicyInsecureNoCheck
+};
+
 NS_ASSUME_NONNULL_BEGIN
 
 RTC_EXPORT
@@ -26,6 +31,18 @@ RTC_EXPORT
 /** Credential to use if this RTCIceServer object is a TURN server. */
 @property(nonatomic, readonly, nullable) NSString *credential;
 
+/**
+ * TLS certificate policy to use if this RTCIceServer object is a TURN server.
+ */
+@property(nonatomic, readonly) RTCTlsCertPolicy tlsCertPolicy;
+
+/**
+  If the URIs in |urls| only contain IP addresses, this field can be used
+  to indicate the hostname, which may be necessary for TLS (using the SNI
+  extension). If |urls| itself contains the hostname, this isn't necessary.
+ */
+@property(nonatomic, readonly, nullable) NSString *hostname;
+
 - (nonnull instancetype)init NS_UNAVAILABLE;
 
 /** Convenience initializer for a server with no authentication (e.g. STUN). */
@@ -37,8 +54,26 @@ RTC_EXPORT
  */
 - (instancetype)initWithURLStrings:(NSArray<NSString *> *)urlStrings
                           username:(nullable NSString *)username
+                        credential:(nullable NSString *)credential;
+
+/**
+ * Initialize an RTCIceServer with its associated URLs, optional username,
+ * optional credential, and TLS cert policy.
+ */
+- (instancetype)initWithURLStrings:(NSArray<NSString *> *)urlStrings
+                          username:(nullable NSString *)username
                         credential:(nullable NSString *)credential
-    NS_DESIGNATED_INITIALIZER;
+                     tlsCertPolicy:(RTCTlsCertPolicy)tlsCertPolicy;
+
+/**
+ * Initialize an RTCIceServer with its associated URLs, optional username,
+ * optional credential, TLS cert policy and hostname.
+ */
+- (instancetype)initWithURLStrings:(NSArray<NSString *> *)urlStrings
+                          username:(nullable NSString *)username
+                        credential:(nullable NSString *)credential
+                     tlsCertPolicy:(RTCTlsCertPolicy)tlsCertPolicy
+                          hostname:(nullable NSString *)hostname NS_DESIGNATED_INITIALIZER;
 
 @end
 
