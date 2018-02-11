@@ -65,9 +65,14 @@ RTC_EXPORT
 @end
 
 /** RTCVideoFrameBuffer containing a CVPixelBufferRef */
+RTC_EXPORT
 @interface RTCCVPixelBuffer : NSObject <RTCVideoFrameBuffer>
 
 @property(nonatomic, readonly) CVPixelBufferRef pixelBuffer;
+@property(nonatomic, readonly) int cropX;
+@property(nonatomic, readonly) int cropY;
+
++ (NSSet<NSNumber *> *)supportedPixelFormats;
 
 - (instancetype)initWithPixelBuffer:(CVPixelBufferRef)pixelBuffer;
 - (instancetype)initWithPixelBuffer:(CVPixelBufferRef)pixelBuffer
@@ -89,10 +94,12 @@ RTC_EXPORT
 @end
 
 /** RTCI420Buffer implements the RTCI420Buffer protocol */
+RTC_EXPORT
 @interface RTCI420Buffer : NSObject <RTCI420Buffer>
 @end
 
 /** Mutable version of RTCI420Buffer */
+RTC_EXPORT
 @interface RTCMutableI420Buffer : RTCI420Buffer <RTCMutableI420Buffer>
 @end
 
