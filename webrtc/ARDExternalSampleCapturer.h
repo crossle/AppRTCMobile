@@ -1,5 +1,5 @@
 /*
- *  Copyright 2014 The WebRTC Project Authors. All rights reserved.
+ *  Copyright 2018 The WebRTC Project Authors. All rights reserved.
  *
  *  Use of this source code is governed by a BSD-style license
  *  that can be found in the LICENSE file in the root of the source
@@ -8,11 +8,11 @@
  *  be found in the AUTHORS file in the root of the source tree.
  */
 
-#import <WebRTC/RTCSessionDescription.h>
+#import <WebRTC/RTCVideoCapturer.h>
 
-@interface RTCSessionDescription (JSON)
+@protocol ARDExternalSampleDelegate <NSObject>
+- (void)didCaptureSampleBuffer:(CMSampleBufferRef)sampleBuffer;
+@end
 
-+ (RTCSessionDescription *)descriptionFromJSONDictionary:(NSDictionary *)dictionary;
-- (NSData *)JSONData;
-
+@interface ARDExternalSampleCapturer : RTCVideoCapturer <ARDExternalSampleDelegate>
 @end
