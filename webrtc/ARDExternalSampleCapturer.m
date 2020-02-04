@@ -10,6 +10,7 @@
 
 #import "ARDExternalSampleCapturer.h"
 
+#import <WebRTC/RTCCVPixelBuffer.h>
 #import <WebRTC/RTCVideoFrameBuffer.h>
 
 @implementation ARDExternalSampleCapturer

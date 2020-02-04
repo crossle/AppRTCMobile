@@ -6,7 +6,7 @@ target 'AppRTCMobile' do
   # use_frameworks!
 
   # Pods for AppRTCMobile
-  pod 'GoogleWebRTC'
+  pod 'GoogleWebRTC', '~> 1.1.29400'
 
 
 end
