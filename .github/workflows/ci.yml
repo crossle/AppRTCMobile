@@ -1,0 +1,9 @@
+on: [push, pull_request]
+
+jobs:
+  build:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: pod install
+      - run: open AppRTCMobile.xcworkspace
